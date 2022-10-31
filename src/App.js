@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './Header';
+import AboutUs from './AboutUs';
 import Course from './Course';
 import Community from './Community';
 import Pricing from './Pricing';
@@ -19,6 +20,7 @@ function App(){
       <Header/>
       
       <Routes>
+      <Route path="/aboutus" element= {<AboutUs />} />
         <Route path="/courses" element= {<Course />} />
         <Route path="/community" element= {<Community />} />
         <Route path="/pricing" element= {<Pricing />} />
