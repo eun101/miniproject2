@@ -13,7 +13,7 @@ import Footer from './Footer';
 import MainContent from './MainContent';
 
 
-function App() {
+function App(){
   return (
     <BrowserRouter>
       <Header/>
@@ -30,5 +30,5 @@ function App() {
     </BrowserRouter>
   );
 }
-  
+
 export default App;
