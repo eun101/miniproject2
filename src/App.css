@@ -3,25 +3,26 @@ body {
   margin: 0px;
   background-color: #EBF3F6;
   font-family: 'Montserrat', sans-serif !important; 
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 15px;
  }
 
- .header img{
-  width: 80%;
-  padding-top: 10px;
+.navbar img{
+  width: 50%;
+margin-left:  50px;
 
  }
 
- .header ul{
+ .navbar ul{
   list-style-type: none;
   display:flex;
-  gap: 2rem;
+  gap: 3rem;
   padding-top: 20px;
   
 }
 
 
-.header li{
+.navbar li{
   text-decoration: none;
 }
 
@@ -29,28 +30,50 @@ body {
 
 nav a{
   text-decoration: none;
-  color: black;
+  color: #EBF3F6;
   display: flex;
   align-items: center;
   height:100%;
-  padding: .25rem;
+
+  
 }
-
-
 
 nav li.active{
-  background-color: #F1C548;
+  font-weight: 500;
+  color:#F1C548 !important;
 }
 
+
+nav a.active{
+  font-weight: 500;
+  color:#F1C548;
+}
+
+
+
 nav a:hover{
-  color: red;
+  color: #EBF3F6;
+  font-weight: 500;
   }
 
 nav {
-  background-color: aqua;
+  background-color: #007D6F;
+  font-weight: 300;
+  
 }
 
 
+.login {
+  border: solid #F1C548;
+  padding: 2px;
+  background-color: #F1C548;
+
+}
+
+.container {
+  padding: auto;
+  padding-top: 120px;
+}
 
 
 

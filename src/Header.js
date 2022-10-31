@@ -1,42 +1,48 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { Link, useResolvedPath, useMatch } from "react-router-dom";
+import { Nav, Container, Navbar, NavDropdown} from 'react-bootstrap';
 
 
 class Header extends React.Component{
     render(){
         return(
-            <nav className="header">
-                <div className ="container">
-                    <div className="row">
-                        <div className="col-3 col-sm-3">
-                        <img src="./img1.png"></img>
-                        </div>
-                        <div className="col-9 col-sm-9">
+            <Navbar expand="lg" fixed="top">
+           
+                {/* <Container> */}
+                <div className="col-3 px-5">
+                <Link to="/"><img src="./img1.png"></img></Link>
+                </div>
+                    <div className="col-9">
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
                             <ul>
                                 <CustomLink to="/aboutus">About Us</CustomLink>
                                 <CustomLink to="/courses">Courses</CustomLink>
                                 <CustomLink to="/community">Community</CustomLink>
-                                <CustomLink href="/pricing">Pricing</CustomLink>
-                                <CustomLink href="/successstories">Success Stories</CustomLink>
-                                <CustomLink href="/contactus">Contact Us</CustomLink>
-                                <CustomLink href ="/login">Login</CustomLink>
+                                <CustomLink to="/pricing">Pricing</CustomLink>
+                                <CustomLink to="/successstories">Success Stories</CustomLink>
+                                <CustomLink to="/contactus">Contact Us</CustomLink>
+                                <CustomLink className="login" to ="/login">Login</CustomLink>
                             </ul>
-                        </div>
+             
+                    </Navbar.Collapse>
                     </div>
-                </div>
-            </nav>
+                  
+                {/* </Container> */}
+            </Navbar>
         );
     }
 }
 
 function CustomLink({ to, children, ...props }){
-    const path = window.location.pathname
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({path: resolvedPath.pathname})
+    
     return (
-        <li className= {path === to ? "active" : ""}>
-            <a href={to} {...props}>
+        <li className= {isActive ? "active" : ""}>
+            <Link to={to} {...props}>
             {children}
-            </a>
+            </Link>
         </li>
     )
 }
