@@ -54,7 +54,7 @@ nav {
 
 
 
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -101,10 +101,10 @@ nav {
 
 .App-link {
   color: #61dafb;
-} */
+} 
 
 
-/* @keyframes App-logo-spin {
+ @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -113,6 +113,7 @@ nav {
   }
 }
 
+/*about*/
 .about {
   width: 100vw;
   min-height: 100vh;
