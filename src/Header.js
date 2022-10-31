@@ -14,9 +14,9 @@ class Header extends React.Component{
                         </div>
                         <div className="col-9 col-sm-9">
                             <ul>
-                                <CustomLink as ={Link} to="/aboutus">About Us</CustomLink>
-                                <CustomLink href="/courses">Courses</CustomLink>
-                                <CustomLink href="/community">Community</CustomLink>
+                                <CustomLink to="/aboutus">About Us</CustomLink>
+                                <CustomLink to="/courses">Courses</CustomLink>
+                                <CustomLink to="/community">Community</CustomLink>
                                 <CustomLink href="/pricing">Pricing</CustomLink>
                                 <CustomLink href="/successstories">Success Stories</CustomLink>
                                 <CustomLink href="/contactus">Contact Us</CustomLink>
@@ -30,11 +30,11 @@ class Header extends React.Component{
     }
 }
 
-function CustomLink({ href, children, ...props }){
+function CustomLink({ to, children, ...props }){
     const path = window.location.pathname
     return (
-        <li className= {path === href ? "active" : ""}>
-            <a href={href} {...props}>
+        <li className= {path === to ? "active" : ""}>
+            <a href={to} {...props}>
             {children}
             </a>
         </li>
