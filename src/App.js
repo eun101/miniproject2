@@ -1,10 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
-import Footer from './Footer';
-function App() {
+import "./App.css";
+import AboutUs from "./AboutUs";
+import Footer from "./Footer";
+
+function App(){
   return (
-    <Footer />
+    <div>
+      <AboutUs />
+      <Footer />
+    </div>
+    
+
   );
 }
-  
+
 export default App;
