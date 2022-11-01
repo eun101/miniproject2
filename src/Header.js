@@ -3,6 +3,7 @@ import { Link, useResolvedPath, useMatch } from "react-router-dom";
 import { Nav, Container, Navbar, NavDropdown} from 'react-bootstrap';
 
 
+
 class Header extends React.Component{
     render(){
         return(
@@ -16,12 +17,13 @@ class Header extends React.Component{
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                             <ul>
+                                <CustomLink to ="/"></CustomLink>
                                 <CustomLink to="/about">About Us</CustomLink>
                                 <CustomLink to="/courses">Courses</CustomLink>
                                 <CustomLink to="/community">Community</CustomLink>
                                 <CustomLink to="/pricing">Pricing</CustomLink>
                                 <CustomLink to="/successstories">Success Stories</CustomLink>
-                                <CustomLink to="/contact">Contact Us</CustomLink>
+                                <CustomLink to="/contactus">Contact Us</CustomLink>
                                 <CustomLink className="login" to ="/login">Login</CustomLink>
                             </ul>
              

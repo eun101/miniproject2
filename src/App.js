@@ -15,13 +15,17 @@ import Footer from './Footer';
 import MainContent from './MainContent';
 
 
+
+
 function App(){
   return (
+    <div>
     <BrowserRouter>
       <Header/>
       
       <Routes>
-      <Route path="/about" element= {<AboutUs />} />
+        <Route path="/" element={<MainContent />} />
+        <Route path="/about" element= {<AboutUs />} />
         <Route path="/courses" element= {<Course />} />
         <Route path="/community" element= {<Community />} />
         <Route path="/pricing" element= {<Pricing />} />
@@ -29,13 +33,14 @@ function App(){
         <Route path="/login" element= {<Login />} />
         <Route path="/contact" element= {<ContactUs />} />
       </Routes>
+         <Footer />
 
-
-      <Footer />
+         
     
 
-
     </BrowserRouter>
+     
+    </div>
   );
 }
 
