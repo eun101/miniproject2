@@ -17,7 +17,13 @@ import MainContent from './MainContent';
 
 
 
+
 function App(){
+
+
+
+
+
   return (
     <div>
     <BrowserRouter>
@@ -30,15 +36,13 @@ function App(){
         <Route path="/community" element= {<Community />} />
         <Route path="/pricing" element= {<Pricing />} />
         <Route path="/successstories" element= {<SuccessStories />} />
-        <Route path="/login" element= {<Login />} />
+      <Route path="/login" element= {<Login />} />
         <Route path="/contact" element= {<ContactUs />} />
       </Routes>
          <Footer />
-
-         
-    
-
     </BrowserRouter>
+    
+    
      
     </div>
   );
