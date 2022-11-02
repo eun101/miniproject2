@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useResolvedPath, useMatch } from "react-router-dom";
 import { Nav, Container, Navbar, NavDropdown} from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import GoogleLogin from 'react-google-login'
+import Login from './Login'
 
 
 
@@ -27,7 +29,7 @@ class Header extends React.Component{
                                     <CustomLink to="/pricing">Pricing</CustomLink>
                                     <CustomLink to="/successstories">Success Stories</CustomLink>
                                     <CustomLink to="/contactus">Contact Us</CustomLink>
-                                    <Func><CustomLink className="btn btn-primary">Login</CustomLink></Func>
+                                   <Login><CustomLink className="btn btn-primary">Login</CustomLink></Login>
                                 </ul>
                                 
                 
@@ -57,49 +59,5 @@ function CustomLink({ to, children, ...props }){
 
 
 
-
-function Func() {
-    const [show, setShow] = useState(false);
-  
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  
-    return (
-      <>
-        <Button variant="primary" onClick={handleShow} id="loginform">
-          Login
-        </Button>
-  
-        <Modal show={show} onHide={handleClose} >
-          <Modal.Header closeButton>
-            <Modal.Title>Login</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!
-          <div className="row">
-                <div className="col">
-                    <label>First Name:</label>
-                    <input type="text" name="first_name" />
-                </div>
-            </div>
-            <div className="row">
-                <div className="col">
-                    <label>Last Name:</label>
-                    <input type="text" name="last_name" />
-                </div>
-            </div>
-        </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      </>
-    );
-  }
-  
 
 export default Header;

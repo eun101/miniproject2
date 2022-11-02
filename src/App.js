@@ -16,13 +16,7 @@ import MainContent from './MainContent';
 
 
 
-
-
 function App(){
-
-
-
-
 
   return (
     <div>
@@ -41,8 +35,6 @@ function App(){
       </Routes>
          <Footer />
     </BrowserRouter>
-    
-    
      
     </div>
   );
