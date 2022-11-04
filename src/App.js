@@ -13,29 +13,37 @@ import Login from './Login';
 import ContactUs from './ContactUs';
 import Footer from './Footer';
 import MainContent from './MainContent';
+import SideNav from "./SideNav";
+
 
 
 function App(){
   return (
+
+   
+
     <BrowserRouter>
-      <Header/>
       
+ 
       <Routes>
       <Route path="/about" element= {<AboutUs />} />
-        <Route path="/courses" element= {<Course />} />
+        <Route path="/course" element= {<Course />} />
         <Route path="/community" element= {<Community />} />
         <Route path="/pricing" element= {<Pricing />} />
         <Route path="/successstories" element= {<SuccessStories />} />
         <Route path="/login" element= {<Login />} />
         <Route path="/contact" element= {<ContactUs />} />
+        
       </Routes>
-
-
+    
+<Header/>
+     
       <Footer />
     
 
 
     </BrowserRouter>
+    
   );
 }
 

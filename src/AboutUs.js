@@ -9,38 +9,36 @@ import React from "react";
 function AboutUs(){
   return (
     <div className="about us">
-      <h1>About Us</h1>
+      <h1>About Excelente.</h1>
+     <div className="m-4">
+       <img src="/smartphone.jpg"></img>
+       <img src="/smartphone.jpg"></img>
+      </div>
+
       <p>Hello, wishes from Excellente Learning Academy</p>
        <br />
-       <h2>MISSION</h2>
+       <h2>Mission</h2>
        <br />
        <p>
-        jdhfhgen witvwurcpxmugwpimaqpñwfsohgucwcw,hgvhija
-        jfowhfñoinn ggegej geiikvmñsvñmañfjwpgwfñlmñjjooi
-        bhgigiygkyugkuaddbkilfuufugiuhohnjkbjvguvhjbkbjjnk
-        kjbkbbjknln.lnkjnkjnkn.lnlhjnljnljnljnlnlgigkbkgj
-        gighuhjjñmllkhouhiugibiuhn jlljmkjhljnnljbhkjjlho
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
        </p>
         <br />
-      <h2>VISION</h2>
+      <h2>Vision</h2>
       <br />
       <p>
-        jdhfhgen witvwurcpxmugwpimaqpñwfsohgucwcw,hgvhija
-        jfowhfñoinn ggegej geiikvmñsvñmañfjwpgwfñlmñjjooi
-        bhgigiygkyugksddfuufugiuhohnjkbjvguvhjbkbjjnkjn
-        kjbkbbjknln.lnkjnkjnkn.lnlhjnljnljnljnlnlgigkbkgj
-        gighuhjjñmllkhouhiugibiuhn jlljmkjhljnnljbhkjjlho
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
        </p>
       <br />
-      <div className="videos">
-        <iframe width="1354" height="480" src="https://www.youtube.com/embed/FbDNVDXG5q8" title="Belief | 1 Minute Motivational Video" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-        <iframe width="1354" height="480" src="https://www.youtube.com/embed/JV8m9PSVOBA" title="Inspiring Hope - Background Music for Videos" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-        <iframe width="1354" height="480" src="https://www.youtube.com/embed/pb7_YJp9bVA" title="Make An Impact - Inspirational Video" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>        
+      <div className="videos">               
+        <iframe width="1080" height="500" src="https://www.youtube.com/embed/pb7_YJp9bVA">        
         </iframe>
       </div>
     </div>
