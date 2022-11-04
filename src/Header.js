@@ -3,8 +3,8 @@ import { Link, useResolvedPath, useMatch } from "react-router-dom";
 import { Nav, Container, Navbar, NavDropdown} from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import GoogleLogin from 'react-google-login'
-import Login from './Login'
+import GoogleLogin from 'react-google-login';
+import Login from './Login';
 
 
 

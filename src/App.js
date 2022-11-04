@@ -21,10 +21,9 @@ import MainContent from './MainContent';
 function App(){
 
   return (
+    <>
     <div>
     <BrowserRouter>
-      
- 
       <Routes>
         <Route path="/" element={<MainContent />} />
         <Route path="/about" element= {<AboutUs />} />
@@ -32,14 +31,17 @@ function App(){
         <Route path="/community" element= {<Community />} />
         <Route path="/pricing" element= {<Pricing />} />
         <Route path="/successstories" element= {<SuccessStories />} />
-      <Route path="/login" element= {<Login />} />
+        <Route path="/login" element= {<Login />} />
         <Route path="/contact" element= {<ContactUs />} />
-        
       </Routes>
-         <Footer />
+      <Header/>
+      <Footer />
     </BrowserRouter>
-     
+    
     </div>
+    </>
+     
+  
   );
 }
 
