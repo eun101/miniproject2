@@ -16,13 +16,15 @@ import MainContent from './MainContent';
 
 
 
+
+
 function App(){
 
   return (
     <div>
     <BrowserRouter>
-      <Header/>
       
+ 
       <Routes>
         <Route path="/" element={<MainContent />} />
         <Route path="/about" element= {<AboutUs />} />
@@ -32,6 +34,7 @@ function App(){
         <Route path="/successstories" element= {<SuccessStories />} />
       <Route path="/login" element= {<Login />} />
         <Route path="/contact" element= {<ContactUs />} />
+        
       </Routes>
          <Footer />
     </BrowserRouter>

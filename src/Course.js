@@ -1,23 +1,18 @@
 import React from "react";
-import {Container} from 'react-bootstrap';
+import './App.css';
+import SideNav from './SideNav'
 
-class Course extends React.Component {
-    constructor(props){
-        super (props);
-    }
-
-
-render() {
-    return (
-        <Container>
-        <div>
-            <div>Course
-            Course
-            CourseCourseCourse
-            </div>
-        </div>
-        </Container>
-    )
+function Course  ()  {
+  return (
+    <div>
+       <header className="App-header">
+       <SideNav />
+  </header>
+        
+    </div>
+  );
 }
-}
+  
+ 
+
 export default Course;
