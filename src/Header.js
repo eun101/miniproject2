@@ -1,20 +1,31 @@
 import React, { useState, useEffect } from "react";
 import { Link, useResolvedPath, useMatch } from "react-router-dom";
-import { Nav, Container, Navbar, NavDropdown} from 'react-bootstrap';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import GoogleLogin from 'react-google-login';
+import { Nav, Navbar, NavDropdown} from 'react-bootstrap';
 import Login from './Login';
 
 
 
-class Header extends React.Component{
-    render(){
+
+function Header (){
+
+
+    const CustomLink = ({ to, children, ...props }) => { 
+        const resolvedPath = useResolvedPath(to)
+        const isActive = useMatch({path: resolvedPath.pathname})
+        
+        return (
+            <li className= {isActive ? "active" : ""}>
+                <Link to={to} {...props}>
+                {children}
+                </Link>
+            </li>
+        )
+    }
+  
         return(
             <div>
                 <Navbar expand="lg" fixed="top">
             
-                    {/* <Container> */}
                     <div className="col-3 px-5">
                     <Link to="/"><img src="./img1.png"></img></Link>
                     </div>
@@ -29,33 +40,21 @@ class Header extends React.Component{
                                     <CustomLink to="/pricing">Pricing</CustomLink>
                                     <CustomLink to="/successstories">Success Stories</CustomLink>
                                     <CustomLink to="/contactus">Contact Us</CustomLink>
-                                   <Login><CustomLink className="btn btn-primary">Login</CustomLink></Login>
+                                   <Login><CustomLink className="btn">Login</CustomLink></Login>
                                 </ul>
                                 
                 
                         </Navbar.Collapse>
                         </div>
-                    
-                    {/* </Container> */}
+                
                 </Navbar>
                 </div>
              
         );
     }
-}
 
-function CustomLink({ to, children, ...props }){
-    const resolvedPath = useResolvedPath(to)
-    const isActive = useMatch({path: resolvedPath.pathname})
-    
-    return (
-        <li className= {isActive ? "active" : ""}>
-            <Link to={to} {...props}>
-            {children}
-            </Link>
-        </li>
-    )
-}
+
+
 
 
 

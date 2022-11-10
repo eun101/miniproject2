@@ -1,4 +1,13 @@
 
+.container {
+
+  text-align: center;
+  margin-top: 100px;
+
+  
+}
+
+
  .header img{
   width: 80%;
   padding-top: 10px;
@@ -19,7 +28,20 @@
 }
 
 
-nav a{
+.btn{
+  background-color: #F1C548;
+  border: #F1C548;
+}
+
+.btn:hover {
+  background-color: #EBF3F6;
+  border: #EBF3F6;
+  color: #007D6F;
+  font-weight: 500;
+}
+
+
+/* nav a{
   text-decoration: none;
   color: black;
   display: flex;
@@ -32,11 +54,9 @@ nav a{
 
 nav a:hover{
   color: red;
-  }
+  } */
 
-nav {
-  background-color: aqua;
-}
+
 
 
 
@@ -88,16 +108,39 @@ nav {
 
 body {
   width: 100%;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   background-color: #EBF3F6;
   font-family: 'Montserrat', sans-serif !important; 
   font-weight: 400;
   font-size: 15px;
+  overflow-x: hidden;
+ }
+
+
+ h1{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+ }
+
+ h2 {
+  font-family: 'Montserrat', sans-serif !important;
+  text-align: center;
+  font-weight: 500;
+ }
+
+ h3 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px;
+  text-align: center;
+
+
  }
 
 .navbar img{
-  width: 50%;
-margin-left:  50px;
+width: 80%;
+margin-top: 13px;
 
  }
 
@@ -137,17 +180,14 @@ nav a.active{
   color:#F1C548;
 }
 
-
-
 nav a:hover{
-  color: #EBF3F6;
+  color: white;
   font-weight: 500;
   }
 
 nav {
-  background-color: #007D6F;
   font-weight: 300;
-  
+  height: 85px;
 }
 
 
@@ -160,11 +200,158 @@ nav {
 
 .container {
   padding: auto;
-  padding-top: 120px;
 }
 
 
-/*AboutUs*/
+
+/*****Hero Banner Starts Here*****/
+
+.heroBanner:before {
+  content: "";
+  background-color: rgb(0 125 111 / 91%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.heroBanner{
+  height: 100%;
+  background-size: cover!important;
+  position: relative;
+  overflow: hidden!important;
+  padding: 150px 0;
+}
+
+
+.heroBanner .bannerlogin {
+  z-index: 3;
+  position: relative;
+
+}
+
+
+.heroBanner .eform{
+  z-index: 6;
+  text-align: center;
+
+ 
+}
+
+
+
+.eform form iframe{
+margin:auto !important;
+}
+
+.heroBanner .promovideo {
+  z-index: 9;
+  position: relative;
+  width: 50%;
+}
+
+.heroBanner  .titlewrapper {
+  z-index: 4;
+  position: relative;
+  color: white;
+  text-align: center;
+
+}
+
+
+.heroBanner  .titlewrapper h2 {
+  /* z-index: 4; */
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
+
+.heroBanner img {
+height: 100%;
+  background-image: cover;
+  /* margin */
+}
+
+
+
+/* .heroBanner {
+  background-image: cover;
+  height: 720px;
+  background-color: #007D6F;
+ 
+} */
+
+
+
+/* .heroBanner .banner1 {
+  opacity: 0.4;
+  z-index: 1;
+  
+}
+
+.heroBanner .banner2 {
+margin-top: -720px;
+z-index: 2;
+opacity: 0.96;
+} */
+
+/* .mainbanner{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0;
+} */
+
+
+
+.mainbanner .banner2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.95;
+  background: #007D6F;
+  z-index: 3;
+}
+
+.mainbanner .banner1 {
+  margin: 0;
+  background-image: cover;
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+/*****Hero Banner Ends Here*****/
+
+/*****Why Excelente Works Starts Here*****/
+
+.why-excelente-content img{
+width: 300px;
+justify-content: center;
+}
+
+
+.whyexcelente img{
+  justify-content: center!important;
+  display:block;
+  margin-top: 20px;
+}
+
+
+/*****Why Excelente Works Ends Here*****/
+
+
+/*****AboutUs Starts Here*****/
 
 
 
@@ -210,7 +397,47 @@ iframe{
   
 }
 
-/*footer*/
+
+/*****AboutUs Ends Here*****/
+
+
+/*****Success Stories Starts Here*****/
+.ImageSlider:before {
+  content: "Success Stories"
+ 
+}
+
+
+
+/*****Success Stories Ends Here*****/
+
+
+/*****Join the Community *******/
+.joincommunity img{
+  width:85% ;
+  justify-content: center;
+  position: relative  ;
+  float: left;
+  box-shadow: #007D6F   ;
+  
+}
+
+.joincommunity{
+  position: relative; 
+  top: 5px; 
+}
+
+ .join-community-caption h2 {
+  margin-top: 100px;
+  text-align: center;
+
+}
+
+
+
+
+/*****Footer Starts Here*****/
+
 .main-footer{
   color: white;
   background-color: #1F4035;
@@ -240,6 +467,9 @@ iframe{
  color: #F1C548;
  
 }
+
+/*****Footer Ends Here*****/
+
 
 /*sidebar*/
 
