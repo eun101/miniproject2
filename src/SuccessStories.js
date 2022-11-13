@@ -47,23 +47,30 @@ render () {
       
     </div>
     <div className="text col-6" >
-    <img className="img-responsive img-thumbnail" src="./Story1.png" 
+    <img className="img-responsive img-thumbnail" src="./Story2.png" 
       />
      
      </div>
      </div>
      <div className="row">
      <div className="col-6 center">
-      <img className="img-responsive img-thumbnail" src="./Story1.png" 
+      <img className="img-responsive img-thumbnail" src="./Story3.png" 
       />
     </div>
 
     <div className="text col-6" >
-      <p>adhifgbggwfpfprugwokjhfbifbiu
-        huffbveufheufjdvbjdbvjdbv
-        jsdhvbdhgeirqpihggananfboahfhv
-        nsiohyf8ejfalnachahoghosvnslv.
+      <p>"I find that we all think we're alone. We're not alone but we feel alone. But when we hear
+        someone else saying the same thing that we are going through, it feels different. that's what 
+        motivated me to share my poetry because i feel like I have helped a lot of people with what they
+        are going through, and I also realized I am not alone. Excelence Learning Academy class helped me 
+        become a more consistent writer and it helped me meet people who were going through some of the same 
+        things. This new year has gifted me with such a beautiful beginning. I am not talking about just this 
+        year but for a life where I stop just surviving and start living."
+        <br />
+        
+        <h3 text-align="center">"Chelsea"</h3>
       </p>
+
      </div>
      </div>
           
