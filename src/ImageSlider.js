@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Button } from "react-bootstrap";
+
 
 const slideStyles = {
   width: "100%",
@@ -18,6 +20,21 @@ const rightArrowStyles = {
   zIndex: 1,
   cursor: "pointer",
 };
+
+const text = {
+  position: "absolute",
+  top: "70%",
+  transform: "translate(0, -50%)",
+  left: "100px",
+  fontSize: "25px",
+  color: "black",
+  zIndex: 2,
+  cursor: "pointer",
+  border: "#FBA731 solid",
+  backgroundColor: "#FBA731",
+  borderRadius: "15px 15px 15px 15px"
+};
+
 
 const leftArrowStyles = {
   position: "absolute",
@@ -44,6 +61,8 @@ const dotStyle = {
   margin: "0 3px",
   cursor: "pointer",
   fontSize: "20px",
+  color: "#F1C548",
+ 
 };
 
 const ImageSlider = ({ slides }) => {
@@ -66,7 +85,11 @@ const ImageSlider = ({ slides }) => {
     backgroundImage: `url(${slides[currentIndex].url})`,
   };
 
+
+
+
   return (
+    
     <div style={sliderStyles}>
       <div>
         <div onClick={goToPrevious} style={leftArrowStyles}>
@@ -75,6 +98,10 @@ const ImageSlider = ({ slides }) => {
         <div onClick={goToNext} style={rightArrowStyles}>
           ❱
         </div>
+
+        <Button style={text}>
+          Watch Now 
+        </Button>
       </div>
       <div style={slideStylesWidthBackground}></div>
       <div style={dotsContainerStyles}>
@@ -93,3 +120,10 @@ const ImageSlider = ({ slides }) => {
 };
 
 export default ImageSlider;
+
+
+
+
+// <section className="success-stories">
+// <div className="container-fluid">
+//     <div className="row">

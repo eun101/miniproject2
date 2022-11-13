@@ -5,11 +5,13 @@ import { NavItems } from "./NavItemsData";
 const SideNav = () => {
 
   return (
+    <div className="container">
     <div style={sideNavStyle}>
-      <h2 style={headerStyle}>Side Navigation</h2>
+      <h3 style={headerStyle}>Side Navigation</h3>
       {NavItems.map((navItem, index) =>{
         return <SideItem key={index} items={navItem} />;
         })}     
+    </div>
     </div>
   );
 };

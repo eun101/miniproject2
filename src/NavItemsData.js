@@ -1,6 +1,14 @@
+import Pricing from "./Pricing";
+
+
 export const NavItems = [
   {
-    name:"Categories",
+    name:"All Categories",
+    Links:{ to: "./Dashboard" },
+   open:  false,
+  },
+  {
+    name:"Personal Development",
     Links: [
       { title:"Sub Menu", to: "#"},
       { title:"Sub Menu", to: "#"},
@@ -10,17 +18,7 @@ export const NavItems = [
    open:  false,
   },
   {
-    name:"about",
-    Links: [
-      { title:"Sub Menu", to: "#"},
-      { title:"Sub Menu", to: "#"},
-      { title:"Sub Menu", to: "#"},
-      { title:"Sub Menu", to: "#"},
-   ],
-   open:  false,
-  },
-  {
-    name:"Course",
+    name:"Productivity Hacks",
     Links: [
       { title:"Sub Menu", to: "#"},
       { title:"Sub Menu", to: "#"},

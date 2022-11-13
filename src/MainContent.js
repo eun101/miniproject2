@@ -5,6 +5,7 @@ import SignUp from './SignUp';
 import ImageSlider from "./ImageSlider";
 import { Link, useResolvedPath, useMatch } from "react-router-dom";
 import Login from './Login';
+import McCourses from "./McCourses";
 
 
 
@@ -12,16 +13,22 @@ function MainContent() {
 
 
     const slides = [
-        { url: "./story1.png", title: "beach" },
-        { url: "story2.png", title: "boat" },
-        { url: "story3.png", title: "forest" },
-        { url: "story4.png", title: "forest" },
+        { url: "story1.png", title: "testimonial", Caption: "hi"},
+        { url: "story2.png", title: "testimonial", Caption: "hi" },
+        { url: "story3.png", title: "testimonial" },
+        { url: "story4.png", title: "testimonial" },
     
       ];
       const containerStyles = {
         width: "1320px",
         height: "600px",
         margin: "0 auto",
+      };
+
+
+      const imageCaption = {
+        caption: "Hi there Success Here",
+        z: "100",
       };
 
 
@@ -131,40 +138,20 @@ function MainContent() {
             </section>
 
 
-         
-
-            <section className="courses">
-                <div className ="row">
-                    <div className="col">
-                        <h2>Courses</h2>
-                        <i className='fab fa-instagram icon'></i>
-                        <ul>
-                            {/* <div>Name : {employee.name}</div> */}
-                            {/* <CustomLink to="/about">About Us</CustomLink>
-                            <CustomLink to="/courses">Courses</CustomLink>
-                            <CustomLink to="/community">Community</CustomLink>
-                            <CustomLink to="/pricing">Pricing</CustomLink>
-                            <CustomLink to="/successstories">Success Stories</CustomLink>
-                            <CustomLink to="/contactus">Contact Us</CustomLink>
-                            <Login><CustomLink className="btn">Login</CustomLink></Login> */}
-                        </ul>
-                        
+                            
+                    <div>
+                        <McCourses />
                     </div>
-                </div>
-            </section>
-
 
 
 
             <section className="success-stories">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col">
-                            <h2>Success Stories</h2>
-                            <div className="success-stories-content">
+                    <h2>Success Stories</h2>
+                        <div className="col col-sm-1 col-md-2">
                             <div style={containerStyles}>
-                                <ImageSlider slides={slides} />
-                            </div>
+                                <ImageSlider slides={slides} Caption = {imageCaption} />
                             </div>
                         </div>
                     </div>

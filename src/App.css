@@ -1,8 +1,8 @@
 
-.container {
+.container, .container-fluid {
 
   text-align: center;
-  margin-top: 100px;
+  margin-top: 70px;
 
   
 }
@@ -33,10 +33,17 @@
   border: #F1C548;
 }
 
+.btn-c{
+  background-color: #EBF3F6;
+  border: #F1C548;
+  color: black;
+  font-weight: 600;
+}
+
 .btn:hover {
   background-color: #EBF3F6;
-  border: #EBF3F6;
-  color: #007D6F;
+  border: #F1C548;
+  color: #F1C548;
   font-weight: 500;
 }
 
@@ -194,7 +201,7 @@ nav {
 .login {
   border: solid #F1C548;
   padding: 2px;
-  background-color: #F1C548;
+  background-color: #FBA731;
 
 }
 
@@ -202,7 +209,32 @@ nav {
   padding: auto;
 }
 
+/*****Sign Up Form Starts Here*****/
 
+#signUpForm {
+  justify-content: center;
+  text-align: center;
+}
+
+.signup-image {
+  height: 10%;
+  background-color: #007D6F;
+  z-index: 99;
+
+}
+
+.modal-close{
+  width: 10%;
+  background-color: none !important;
+  border: none;
+  align-items: flex-end;
+  border-radius: 200px;
+  float:left;
+  
+}
+
+
+/*****Sign Up Form Ends Here*****/
 
 /*****Hero Banner Starts Here*****/
 
@@ -351,6 +383,36 @@ justify-content: center;
 /*****Why Excelente Works Ends Here*****/
 
 
+
+
+
+
+.card {
+  background: #fcfcfc;
+  transition: 0.4s all;
+}
+
+.card:hover {
+  opacity: 0.7;
+  transform: translateX(-2px);
+  transition: 1s all;
+}
+
+
+
+/* .cards {
+
+  justify-content: center;
+  min-height: 200px;
+  background: #fcfcfc;
+  margin: 20px 40px;
+  transition: 0.4s all;
+  width: 800px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
 /*****AboutUs Starts Here*****/
 
 
@@ -402,10 +464,8 @@ iframe{
 
 
 /*****Success Stories Starts Here*****/
-.ImageSlider:before {
-  content: "Success Stories"
+
  
-}
 
 
 
@@ -436,6 +496,10 @@ iframe{
 
 
 
+
+
+
+
 /*****Footer Starts Here*****/
 
 .main-footer{
@@ -446,6 +510,11 @@ iframe{
   bottom: 0;
   width: 100%;
   
+}
+
+.footer-logo{
+  width: 100%; 
+  justify-content: center;
 }
 
 .page-container{
@@ -473,3 +542,22 @@ iframe{
 
 /*sidebar*/
 
+
+
+
+
+/* @media screen and (max-width:992px) {
+containerStyles = {
+    width: 1320px;
+    height: 600px;
+  };
+}
+
+
+@media screen and (max-width:768px) {
+
+  .success-stories{
+    width: 600px;
+    height: 600px;
+  }
+} */

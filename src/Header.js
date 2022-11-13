@@ -24,7 +24,7 @@ function Header (){
   
         return(
             <div>
-                <Navbar expand="lg" fixed="top">
+                <Navbar expand="lg" fixed="top" className="bg-dark">
             
                     <div className="col-3 px-5">
                     <Link to="/"><img src="./img1.png"></img></Link>
@@ -35,7 +35,7 @@ function Header (){
                                 <ul>
                                     <CustomLink to ="/"></CustomLink>
                                     <CustomLink to="/about">About Us</CustomLink>
-                                    <CustomLink to="/courses">Courses</CustomLink>
+                                    <CustomLink to="/courses/">Courses</CustomLink>
                                     <CustomLink to="/community">Community</CustomLink>
                                     <CustomLink to="/pricing">Pricing</CustomLink>
                                     <CustomLink to="/successstories">Success Stories</CustomLink>
