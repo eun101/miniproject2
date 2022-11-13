@@ -3,17 +3,12 @@ import Pricing from "./Pricing";
 
 export const NavItems = [
   {
-    name:"All Categories",
-    Links:{ to: "./Dashboard" },
-   open:  false,
-  },
-  {
     name:"Personal Development",
     Links: [
-      { title:"Sub Menu", to: "#"},
-      { title:"Sub Menu", to: "#"},
-      { title:"Sub Menu", to: "#"},
-      { title:"Sub Menu", to: "#"},
+      { title:"Sub Menu", to: ""},
+      { title:"Sub Menu", to: ""},
+      { title:"Sub Menu", to: ""},
+      { title:"Sub Menu", to: ""},
    ],
    open:  false,
   },
@@ -25,10 +20,20 @@ export const NavItems = [
       { title:"Sub Menu", to: "#"},
       { title:"Sub Menu", to: "#"},
    ],
+   open:  false,
+  },
+  {
+    name:"Personal Finance",
+    Links: [
+      { title:"Sub Menu", to: "#"},
+      { title:"Sub Menu", to: "#"},
+      { title:"Sub Menu", to: "#"},
+      { title:"Sub Menu", to: "#"},
+   ],
    open: false,
   },
   {
-    name:"Pricing",
+    name:"Communicating",
     Links: [
       { title:"Sub Menu", to: "#"},
       { title:"Sub Menu", to: "#"},
@@ -38,7 +43,7 @@ export const NavItems = [
    open: false,
   }, 
   {
-    name:"Pricing",
+    name:"Writing",
     Links: [
       { title:"Sub Menu", to: "#"},
       { title:"Sub Menu", to: "#"},
@@ -48,7 +53,17 @@ export const NavItems = [
    open:  false,
   },
   {
-    name:"Pricing",
+    name:"Leadership",
+    Links: [
+      { title:"Sub Menu", to: "#"},
+      { title:"Sub Menu", to: "#"},
+      { title:"Sub Menu", to: "#"},
+      { title:"Sub Menu", to: "#"},
+   ],
+   open: false,
+  },
+  {
+    name:"Creativity",
     Links: [
       { title:"Sub Menu", to: "#"},
       { title:"Sub Menu", to: "#"},

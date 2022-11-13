@@ -13,6 +13,11 @@ import Login from './Login';
 import ContactUs from './ContactUs';
 import Footer from './Footer';
 import MainContent from './MainContent';
+import SearchBar from './SearchBar';
+import Data from './Data';
+
+
+
 import CoursesTrial from './CoursesTrial';
 
 
@@ -23,6 +28,8 @@ function App(){
 
   return (
     <>
+    
+    
     <div>
     <BrowserRouter>
       <Routes>
@@ -33,7 +40,9 @@ function App(){
         <Route path="/pricing" element= {<Pricing />} />
         <Route path="/successstories" element= {<SuccessStories />} />
         <Route path="/login" element= {<Login />} />
-        <Route path="/contact" element= {<ContactUs />} />
+        <Route path="/contact" element= {<ContactUs />} />        
+        <Route path="/searchbar" element={<SearchBar />} />
+        <Route path="/data" element={<Data />} />
       </Routes>
       <Header/>
       <Footer />
