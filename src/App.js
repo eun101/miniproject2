@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './Header';
 import AboutUs from './AboutUs';
-import Course from './Course';
+import Courses from './Courses';
 import Community from './Community';
 import Pricing from './Pricing';
 import SuccessStories from './SuccessStories';
@@ -18,6 +18,7 @@ import Data from './Data';
 
 
 
+import CoursesTrial from './CoursesTrial';
 
 
 
@@ -34,7 +35,7 @@ function App(){
       <Routes>
         <Route path="/" element={<MainContent />} />
         <Route path="/about" element= {<AboutUs />} />
-        <Route path="/courses" element= {<Course />} />
+        <Route path="/courses" element= {<Courses />} />
         <Route path="/community" element= {<Community />} />
         <Route path="/pricing" element= {<Pricing />} />
         <Route path="/successstories" element= {<SuccessStories />} />

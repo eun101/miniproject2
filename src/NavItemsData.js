@@ -1,3 +1,6 @@
+import Pricing from "./Pricing";
+
+
 export const NavItems = [
   {
     name:"Personal Development",
