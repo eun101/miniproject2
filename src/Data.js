@@ -1,6 +1,5 @@
+export const Data = [
 
-
- let data = [
 {
   "title": "course",
   "language": "english",
@@ -71,3 +70,5 @@
 },
 
 ]
+
+export default Data;

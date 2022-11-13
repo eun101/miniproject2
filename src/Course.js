@@ -7,9 +7,10 @@ function Course  ()  {
     <div>
        <header className="App-header">
        <SideNav />
-  </header>
-        
-    </div>
+       </header>
+       </div>
+   
+    
   );
 }
   

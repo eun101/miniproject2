@@ -13,9 +13,9 @@ import Login from './Login';
 import ContactUs from './ContactUs';
 import Footer from './Footer';
 import MainContent from './MainContent';
-// import SearchBar from './SearchBar';
-//import Data from './Data';
-//import Courses from './Courses';
+import SearchBar from './SearchBar';
+import Data from './Data';
+
 
 
 
@@ -28,7 +28,7 @@ function App(){
   return (
     <>
     
-    {/* <SearchBar placeholder="Enter text..." data="BookData"/> */}
+    
     <div>
     <BrowserRouter>
       <Routes>
@@ -40,9 +40,8 @@ function App(){
         <Route path="/successstories" element= {<SuccessStories />} />
         <Route path="/login" element= {<Login />} />
         <Route path="/contact" element= {<ContactUs />} />        
-        {/* <Route path="/searchbar" element={<SearchBar />} /> */}
-      
-
+        <Route path="/searchbar" element={<SearchBar />} />
+        <Route path="/data" element={<Data />} />
       </Routes>
       <Header/>
       <Footer />

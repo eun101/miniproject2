@@ -1,6 +1,16 @@
 export const NavItems = [
   {
-    name:"Categories",
+    name:"Personal Development",
+    Links: [
+      { title:"Sub Menu", to: ""},
+      { title:"Sub Menu", to: ""},
+      { title:"Sub Menu", to: ""},
+      { title:"Sub Menu", to: ""},
+   ],
+   open:  false,
+  },
+  {
+    name:"Productivity Hacks",
     Links: [
       { title:"Sub Menu", to: "#"},
       { title:"Sub Menu", to: "#"},
@@ -10,17 +20,7 @@ export const NavItems = [
    open:  false,
   },
   {
-    name:"about",
-    Links: [
-      { title:"Sub Menu", to: "#"},
-      { title:"Sub Menu", to: "#"},
-      { title:"Sub Menu", to: "#"},
-      { title:"Sub Menu", to: "#"},
-   ],
-   open:  false,
-  },
-  {
-    name:"Course",
+    name:"Personal Finance",
     Links: [
       { title:"Sub Menu", to: "#"},
       { title:"Sub Menu", to: "#"},
@@ -30,7 +30,7 @@ export const NavItems = [
    open: false,
   },
   {
-    name:"Pricing",
+    name:"Communicating",
     Links: [
       { title:"Sub Menu", to: "#"},
       { title:"Sub Menu", to: "#"},
@@ -40,7 +40,7 @@ export const NavItems = [
    open: false,
   }, 
   {
-    name:"Pricing",
+    name:"Writing",
     Links: [
       { title:"Sub Menu", to: "#"},
       { title:"Sub Menu", to: "#"},
@@ -50,7 +50,17 @@ export const NavItems = [
    open:  false,
   },
   {
-    name:"Pricing",
+    name:"Leadership",
+    Links: [
+      { title:"Sub Menu", to: "#"},
+      { title:"Sub Menu", to: "#"},
+      { title:"Sub Menu", to: "#"},
+      { title:"Sub Menu", to: "#"},
+   ],
+   open: false,
+  },
+  {
+    name:"Creativity",
     Links: [
       { title:"Sub Menu", to: "#"},
       { title:"Sub Menu", to: "#"},

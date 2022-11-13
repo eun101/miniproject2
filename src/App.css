@@ -406,6 +406,35 @@ iframe{
   content: "Success Stories"
  
 }
+.banner{
+  background-image: linear-gradient( #EBF3F6, ),
+  url("");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  margin-top: 100px;
+  text-align:center;
+  margin-bottom: 100px;
+ 
+ 
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+}
+.image {
+  flex-basis: 40%;
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
 
 
 
@@ -448,6 +477,11 @@ iframe{
   
 }
 
+.footer-logo{
+  width: 100%; 
+  justify-content: center;
+}
+
 .page-container{
   display: flex;
   flex-direction: column;
@@ -471,5 +505,33 @@ iframe{
 /*****Footer Ends Here*****/
 
 
-/*sidebar*/
+/*SearchBar*/
+.SearchBar{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.searchBar input {
+  margin-top: 20px;
+  width: 350px;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+p {
+  margin: 10px;
+  font-size: 18px;
+}
+/*******searchbar end here******/
+
+
+
+
+  
+  
+  
+  

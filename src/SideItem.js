@@ -28,24 +28,25 @@ const SideItem = ({items}) => {
 
 //styling
 const nameStyle = {
-  margin: "20px",
-  fontWeight: "600",
+  margin: "5px",
+  fontWeight: "300",
 };
 const sideItemStyle =  {
   height: "auto",
-  minHeight: "50px",
+  minHeight: "40px",
   width: "350px",
-  borderTop:"1px solid #CBCBCB",
-  color:"#fff",
+  borderTop:"none",
+  color:"white",
   display:"flex",
   alignItems: "flex-start",
   flexDirection:"column",
+  
 };
 const linkContainerStyle = {
   height:"auto",
-  width:"350px",
-  background:"#FAFAFA",
-  borderTop:"1px solid #D6D6D6", 
+  width:"200px",
+  background:"#1F4035",
+  borderTop:"3px solid #1F4035", 
 };
 
 const linkStyle = {

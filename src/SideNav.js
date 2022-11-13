@@ -6,8 +6,8 @@ const SideNav = () => {
 
   return (
     <div style={sideNavStyle}>
-      <h2 style={headerStyle}>Side Navigation</h2>
-      {NavItems.map((navItem, index) =>{
+      <h2 style={headerStyle}>Categories</h2>
+      {NavItems.map((navItem, index) => {
         return <SideItem key={index} items={navItem} />;
         })}     
     </div>
@@ -15,19 +15,19 @@ const SideNav = () => {
 };
 //styling
 const sideNavStyle = {
-  height: "100vh",
-  width: "350px",
+  height: "75vh",
+  width: "230px",
   background:
-   "linear-gradient(135deg, rgba(55,82,131,1) 0% rgba(20,96,194)",
+   "#1F4035",
   position: "absolute",
   border:"1px solid transparent",
   left: 0,
   textAlign: "left",
 };
 const headerStyle = {
-  fontWeight: "600",
+  fontWeight: "400",
   padding: "0px 20px",
-  color: "#fff",
+  color: "#EBF3F6",
 };
 
 
