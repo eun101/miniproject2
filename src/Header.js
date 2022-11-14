@@ -24,10 +24,10 @@ function Header (){
   
         return(
             <div>
-                <Navbar expand="lg" fixed="top" className="bg-dark">
+                <Navbar expand="lg" fixed="top" className="bg-light">
             
                     <div className="col-3 px-5">
-                    <Link to="/"><img src="./img1.png"></img></Link>
+                    <Link to="/"><img src="./img2.png"></img></Link>
                     </div>
                         <div className="col-9">
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -40,7 +40,7 @@ function Header (){
                                     <CustomLink to="/pricing">Pricing</CustomLink>
                                     <CustomLink to="/successstories">Success Stories</CustomLink>
                                     <CustomLink to="/contactus">Contact Us</CustomLink>
-                                   <Login><CustomLink className="btn">Login</CustomLink></Login>
+                                   <Login><CustomLink>Login</CustomLink></Login>
                                 </ul>
                                 
                 

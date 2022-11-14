@@ -28,23 +28,37 @@
 }
 
 
-.btn{
-  background-color: #F1C548;
-  border: #F1C548;
+.btn {
+  background-color: #f4be2c;
+  border: #f4be2c;
+  color: white;
+  font-weight: 500;
+  border-radius: 1px !important;
+  padding: 8px;
+  padding: 5px 15px 5px 15px;
 }
+
+.btn:hover{
+  background-color: #ff9b0f;
+  border: #F1C548;
+  border-radius: 1px !important;
+  padding: 5px 15px 5px 15px;
+  color: white;
+}
+
+
 
 .btn-c{
   background-color: #EBF3F6;
   border: #F1C548;
   color: black;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-.btn:hover {
+.btn-c:hover{
   background-color: #EBF3F6;
-  border: #F1C548;
-  color: #F1C548;
-  font-weight: 500;
+  color: black;
+  font-weight: 600;
 }
 
 
@@ -142,8 +156,11 @@ body {
   font-size: 18px;
   text-align: center;
 
-
  }
+/* 
+ .bg-light {
+  background-color: #007D6F !important;
+ } */
 
 .navbar img{
 width: 80%;
@@ -168,10 +185,11 @@ margin-top: 13px;
 
 nav a{
   text-decoration: none;
-  color: #EBF3F6;
+  color: #007D6F;
   display: flex;
   align-items: center;
   height:100%;
+  font-weight: 500;
 
   
 }
@@ -188,8 +206,8 @@ nav a.active{
 }
 
 nav a:hover{
-  color: white;
-  font-weight: 500;
+  color: #007D6F;
+  font-weight: 600;
   }
 
 nav {
@@ -211,27 +229,128 @@ nav {
 
 /*****Sign Up Form Starts Here*****/
 
+.googlebutton{
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding: 10px 123px;
+  border-radius: 5px;
+  color:black;
+  border: rgb(132, 132, 132) solid 1px;
+  margin-bottom: 50px;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.googlebutton:hover{
+  background-color:#dfdfdf;  
+}
+
+.googlebutton img{
+
+  justify-self: start;
+}
+
+.btn-sign-to-google {
+  background-color: #f4be2c;
+  border: #f4be2c;
+  color: #1F4035;
+  font-weight: 600;
+  border-radius: 1px !important;
+  padding: 8px;
+  padding: 5px 190px;
+  border-radius: 20px !important;
+  
+}
+
+.btn-sign-to-google:hover{
+  background-color: #FBA731;
+  border: #f4be2c;
+  color: #1F4035;
+  font-weight: 600;
+  border-radius: 1px !important;
+  padding: 8px;
+  padding: 5px 190px;
+  border-radius: 20px !important;
+  
+}
+
+
+.signup-modal{
+  background-color: #F1C548;
+}
+
+
 #signUpForm {
   justify-content: center;
   text-align: center;
 }
 
-.signup-image {
-  height: 10%;
-  background-color: #007D6F;
-  z-index: 99;
+.signup-image img {
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: 15%;
 
+}
+
+
+h5{
+  text-align: center;
+}
+
+h6 {
+  text-align: center;
+  font-weight: 400;
+  color: #505050;
+}
+
+
+.google-login {
+  width: 200px !important;
+}
+
+.terms {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+  color: white;
+ 
 }
 
 .modal-close{
-  width: 10%;
-  background-color: none !important;
+  background-color: #EBF3F6!important;
+  font-weight: 400;
+  font-size: 20px;
   border: none;
   align-items: flex-end;
-  border-radius: 200px;
+  border-radius: 20px;
   float:left;
-  
+  text-align: end;
 }
+
+
+
+.modal-content {
+  background-color: #EBF3F6;
+
+}
+
+button .modal-close{
+  text-align: end;
+}
+
+.modal-footer {
+  justify-content: center;
+  background-color: #007D6F;
+  height: 50%;
+}
+
+.modal-footer a {
+  color: white;
+}
+
 
 
 /*****Sign Up Form Ends Here*****/
@@ -245,6 +364,7 @@ nav {
   height: 100%;
   position: absolute;
   top: 0;
+  background-size: cover;
 }
 
 .heroBanner{
@@ -252,8 +372,12 @@ nav {
   background-size: cover!important;
   position: relative;
   overflow: hidden!important;
-  padding: 150px 0;
+  padding: 60px 0 100px 0;
+ 
+
 }
+
+
 
 
 .heroBanner .bannerlogin {
@@ -270,16 +394,45 @@ nav {
  
 }
 
-
-
-.eform form iframe{
-margin:auto !important;
+.googlebutton-banner {
+background-color: white;
+padding: 3px 60px;
+border-radius: 5px;
+color:black;
+border: rgb(132, 132, 132) solid 1px;
+margin-bottom: 50px;
+justify-content: center;
+font-weight: 700;
+font-size: 14px;
 }
+
+.googlebutton-banner:hover {
+  background-color:#f8de97a0;  
+}
+
+
+.form-row a{
+color: white;
+}
+
+.form-row a:hover{
+  color: #F1C548;
+  }
+
+.form-row {
+font-size: 14px;  
+
+}
+
+.form-row .terms {
+  font-size: 14px;  
+  }
+
 
 .heroBanner .promovideo {
   z-index: 9;
   position: relative;
-  width: 50%;
+
 }
 
 .heroBanner  .titlewrapper {
@@ -287,7 +440,6 @@ margin:auto !important;
   position: relative;
   color: white;
   text-align: center;
-
 }
 
 
@@ -297,6 +449,12 @@ margin:auto !important;
   text-align: center;
 }
 
+
+.heroBanner  .titlewrapper h1 {
+  /* z-index: 4; */
+margin-top: 120px;
+  text-align: center;
+}
 
 
 
@@ -330,31 +488,9 @@ z-index: 2;
 opacity: 0.96;
 } */
 
-/* .mainbanner{
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 0;
-} */
 
 
 
-.mainbanner .banner2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.95;
-  background: #007D6F;
-  z-index: 3;
-}
-
-.mainbanner .banner1 {
-  margin: 0;
-  background-image: cover;
-  position: absolute;
-}
 
 
 
@@ -393,9 +529,10 @@ justify-content: center;
 }
 
 .card:hover {
-  opacity: 0.7;
-  transform: translateX(-2px);
-  transition: 1s all;
+  opacity: 2;
+  transform: translateX(-1px);
+  transition: 700ms all;
+  background-color: #f4be2c;
 }
 
 
@@ -478,14 +615,19 @@ iframe{
   margin-top: 100px;
   text-align:center;
   margin-bottom: 100px;
- 
- 
+
 }
-.container{
+
+
+
  
+ 
+
+/* .container{
+  display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 img {
   max-width: 100%;
 }
@@ -516,14 +658,28 @@ img {
 
 .joincommunity{
   position: relative; 
-  top: 5px; 
+  background-color: #007D6F;
+  background-size: cover;
+  padding: 10px 30px;
+
 }
 
- .join-community-caption h2 {
-  margin-top: 100px;
+ .join-community-title h2 {
+  text-align: last;
   text-align: center;
+  color: white;
+  margin-top: 150px
+
 
 }
+
+
+
+ .join-community-caption{
+  text-align: center;
+  color: white;
+ }
+
 
 
 
@@ -595,8 +751,27 @@ p {
 }
 /*******searchbar end here******/
 
+/*****Scroll Button Starts Here*****/
+
+.scroll-button{
+  position: fixed; 
+  right: 0;
+  bottom: 5px;
+  font-size: 24px;
+  width: 40px;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+  border: none!important;
+  background-color: #007D6F !important;
+}
+
+.scroll-button:hover {
+border-radius: 20px;
+}
 
 
+/*****Scroll Ends Starts Here*****/
 
   
   
