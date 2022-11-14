@@ -10,12 +10,12 @@ function AboutUs(){
   return (
     <div className="about us">
       <h1>About Excelente.</h1>
-     <div className="m-4">
+     <div className="m-4" >
        <img src="/smartphone.jpg"></img>
        <img src="/smartphone.jpg"></img>
       </div>
 
-      <p>Hello, wishes from Excelente Learning Academy</p>
+      <h4>Hello, wishes from Excelente Learning Academy</h4>
        <br />
        <h2>Mission</h2>
        <br />
@@ -35,8 +35,10 @@ function AboutUs(){
        </p>
       <br />
       <div className="videos">               
-        <iframe width="1080" height="500" src="https://www.youtube.com/embed/pb7_YJp9bVA">        
+        <iframe width="1080" height="500" src="https://www.youtube.com/embed/pb7_YJp9bVA">       
         </iframe>
+        <iframe width="1080" height="500" src="https://www.youtube.com/embed/pb7_YJp9bVA">
+        </iframe> 
       </div>
     </div>
     );

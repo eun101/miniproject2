@@ -3,8 +3,8 @@ import './App.css';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+//import Carousel from 'react-multi-carousel';
+//import 'react-multi-carousel/lib/styles.css';
 
 const apiPath = "http://localhost:9000/";
 

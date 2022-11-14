@@ -30,20 +30,23 @@ render () {
       />
     </div>
     <div className="text col-6" >
-      <p>adhifgbggwfpfprugwokjhfbifbiu
-        huffbveufheufjdvbjdbvjdbv
-        jsdhvbdhgeirqpihggananfboahfhv
-        nsiohyf8ejfalnachahoghosvnslv.
-      </p>
+      <br />
+      
+      <h3>"This new year has gifted me with such a beautiful beginning. 
+        I am not talking about just this year but for a life 
+        where I stop just surviving and start living."
+      </h3>
+      <p text-align="center">"Johnny"</p>
      </div>
      </div>
      <div className="row">
      <div className="col-6 center">
-     <p>adhifgbggwfpfprugwokjhfbifbiu
-        huffbveufheufjdvbjdbvjdbv
-        jsdhvbdhgeirqpihggananfboahfhv
-        nsiohyf8ejfalnachahoghosvnslv.
-      </p>
+      <br />
+  
+     <h3>Excelence Learning Academy class helped me become a more consistent 
+      writer and it helped me meet people who were going through some of the same things."
+      </h3>
+      <p text-align="center">"Natalia"</p>
       
     </div>
     <div className="text col-6" >
@@ -58,19 +61,13 @@ render () {
       />
     </div>
 
-    <div className="text col-6" >
-      <p>"I find that we all think we're alone. We're not alone but we feel alone. But when we hear
-        someone else saying the same thing that we are going through, it feels different. that's what 
-        motivated me to share my poetry because i feel like I have helped a lot of people with what they
-        are going through, and I also realized I am not alone. Excelence Learning Academy class helped me 
-        become a more consistent writer and it helped me meet people who were going through some of the same 
-        things. This new year has gifted me with such a beautiful beginning. I am not talking about just this 
-        year but for a life where I stop just surviving and start living."
-        <br />
-        
-        <h3 text-align="center">"Chelsea"</h3>
-      </p>
-
+    <div className="text col-6 " >
+      <br />
+   
+      <h3>"I would have never had this chance at life without the help of Excelence Learning academy. 
+        You are the reason why I am and who I am today."</h3>
+      <p text-align="center">"Chelsea"</p>
+     
      </div>
      </div>
           
