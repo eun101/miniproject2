@@ -33,10 +33,7 @@ function CourseCategories(){
                 <CustomLink to ="/writing">Writing</CustomLink>
                 <CustomLink to ="/leadership">Leadership</CustomLink>
                 <CustomLink to ="/creativity">Creativity</CustomLink>
-
             </ul>
-        
-    
       </div>
     )
 }

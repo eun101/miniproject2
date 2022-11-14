@@ -16,6 +16,9 @@ import MainContent from './MainContent';
 import SearchBar from './SearchBar';
 import Data from './Data';
 
+import { Fragment } from 'react';
+import ScrollButton from './ScrollBtn';
+
 
 
 import CoursesTrial from './CoursesTrial';
@@ -31,6 +34,7 @@ function App(){
     
     
     <div>
+    <Fragment>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainContent />} />
@@ -47,6 +51,11 @@ function App(){
       <Header/>
       <Footer />
     </BrowserRouter>
+
+ 
+      
+      <ScrollButton />
+    </Fragment>
     
     </div>
     </>
