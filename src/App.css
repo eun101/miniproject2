@@ -1,8 +1,14 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 
 .container, .container-fluid {
 
   text-align: center;
-  margin-top: 70px;
+  margin-top: 85px;
 
   
 }
@@ -62,71 +68,6 @@
 }
 
 
-/* nav a{
-  text-decoration: none;
-  color: black;
-  display: flex;
-  align-items: center;
-  height:100%;
-  padding: .25rem;
-}
-
-
-
-nav a:hover{
-  color: red;
-  } */
-
-
-
-
-
-
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-} 
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-
-
-
 body {
   width: 100%;
   margin: 0;
@@ -149,6 +90,7 @@ body {
   font-family: 'Montserrat', sans-serif !important;
   text-align: center;
   font-weight: 500;
+  margin:20px 0;
  }
 
  h3 {
@@ -157,14 +99,64 @@ body {
   text-align: center;
 
  }
-/* 
- .bg-light {
-  background-color: #007D6F !important;
- } */
+
+h5{
+  font-size: 16px;
+}
+
+h6 {
+  float: right;
+
+}
+
+
+
+.card-bottom a{
+
+  text-decoration: none;
+  color:#1F4035;
+  }
+
+  
+.card-bottom a:hover{
+
+  text-decoration: none;
+  color:white;
+  }
+
+
+ .modal-content .top-banner-modal {
+  background-color: #F1C548;
+
+}
+
+.modal-dialog {
+  border-radius: 20px;
+}
+
+.top-banner-text {
+  text-align: center;
+}
+
+.top-banner-btn {
+  background-color:#F1C548;
+  justify-content: center !important;
+  border: solid #F1C548 1px;
+  color: white;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.top-banner-btn:hover{
+  background-color:#FBA731;
+}
+
 
 .navbar img{
 width: 80%;
 margin-top: 13px;
+
 
  }
 
@@ -177,9 +169,10 @@ margin-top: 13px;
 }
 
 
-.navbar li{
+/* .navbar li{
   text-decoration: none;
-}
+  float:left;   
+} */
 
 
 
@@ -194,10 +187,6 @@ nav a{
   
 }
 
-nav li.active{
-  font-weight: 500;
-  color:#F1C548 !important;
-}
 
 
 nav a.active{
@@ -225,6 +214,11 @@ nav {
 
 .container {
   padding: auto;
+}
+
+.card-container {
+  padding: 20px;
+  margin-top: 100px;
 }
 
 /*****Sign Up Form Starts Here*****/
@@ -296,6 +290,13 @@ nav {
 }
 
 
+h4 {
+  text-align: center;
+  font-weight: 400;
+  color: #505050;
+  text-decoration: none;
+}
+
 h5{
   text-align: center;
 }
@@ -326,8 +327,8 @@ h6 {
   border: none;
   align-items: flex-end;
   border-radius: 20px;
-  float:left;
   text-align: end;
+  margin-left: 20px;
 }
 
 
@@ -378,6 +379,22 @@ button .modal-close{
 }
 
 
+.login-herobanner {
+ background-color:white;
+}
+
+.form-row .heroBanner-signup-email a {
+  color: #F1C548;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.form-row .heroBanner-signup-email a:hover {
+  color: #FBA731;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 
 
 .heroBanner .bannerlogin {
@@ -407,7 +424,7 @@ font-size: 14px;
 }
 
 .googlebutton-banner:hover {
-  background-color:#f8de97a0;  
+  background-color:#f1f0f0;  
 }
 
 
@@ -424,6 +441,7 @@ font-size: 14px;
 
 }
 
+
 .form-row .terms {
   font-size: 14px;  
   }
@@ -432,6 +450,7 @@ font-size: 14px;
 .heroBanner .promovideo {
   z-index: 9;
   position: relative;
+  margin-top: 50px;
 
 }
 
@@ -452,7 +471,7 @@ font-size: 14px;
 
 .heroBanner  .titlewrapper h1 {
   /* z-index: 4; */
-margin-top: 120px;
+margin-top: 80px;
   text-align: center;
 }
 
@@ -512,7 +531,6 @@ justify-content: center;
 .whyexcelente img{
   justify-content: center!important;
   display:block;
-  margin-top: 20px;
 }
 
 
@@ -520,6 +538,24 @@ justify-content: center;
 
 
 
+
+/*****Courses Starts Here*****/
+
+.card-title{
+  color:#1F4035;
+  text-align: center;
+}
+
+
+.card-title:hover{
+  color:white;
+  text-align: center;
+
+}
+
+.card-body a{
+  text-decoration: none;
+}
 
 
 
@@ -536,19 +572,25 @@ justify-content: center;
 }
 
 
+.card-container button {
+ align-items: center;
+ justify-content: center;
+} 
 
-/* .cards {
 
-  justify-content: center;
-  min-height: 200px;
-  background: #fcfcfc;
-  margin: 20px 40px;
-  transition: 0.4s all;
-  width: 800px;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-} */
+.sidebar li{
+  list-style: none;
+  margin: 20px 0;
+}
+
+.sidebar{
+  list-style: none;
+  margin-top: 60px;
+}
+
+
+
+/*****Courses Ends Here*****/
 
 /*****AboutUs Starts Here*****/
 
@@ -601,10 +643,7 @@ iframe{
 
 
 /*****Success Stories Starts Here*****/
-.ImageSlider:before {
-  content: "Success Stories"
- 
-}
+
 .banner{
   background-image: linear-gradient( #EBF3F6, ),
   url("");
@@ -616,6 +655,14 @@ iframe{
   text-align:center;
   margin-bottom: 100px;
 
+}
+
+.success-stories{
+  height: 20%;
+}
+
+.image-slider {
+  height: 20%;
 }
 
 
@@ -678,12 +725,38 @@ img {
  .join-community-caption{
   text-align: center;
   color: white;
+  margin-top: 200px;
  }
 
 
 
+ /*****Join Community Ends Here*****/
 
 
+ /*****Pricing Starts Here*****/
+
+.price-card h2 {
+font-size: 50px;
+font-weight: 500;
+margin:40px;
+}
+
+.price-card div:hover{
+ background-color: none !important;   
+  }
+
+
+ /*****Pricing Ends Here*****/
+
+  /*****Contact Us Starts Here*****/
+
+
+.contact-us {
+  margin-top: 100px;
+}
+
+  
+  /*****Contact Us Ends Here*****/
 
 
 
@@ -774,6 +847,33 @@ border-radius: 20px;
 /*****Scroll Ends Starts Here*****/
 
   
-  
-  
+@media screen and (max-width:576px) {
+  .promovideo {
+    display: none;
+  }
+
+  .joincommunity row{
+    display: block;
+    
+  }
+}
+
+@media screen and (max-width:320px) {
+.joincommunity .row{
+    display: block;
+
+}
+
+.joincommunity .img{
+
+width: 300px;
+
+}
+
+.joincommunity-img2 {
+display: none;
+
+}
+}
+
   

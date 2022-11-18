@@ -1,21 +1,19 @@
 import React from "react";
 import {Container} from 'react-bootstrap';
 
-class ContactUs extends React.Component {
-    constructor(props){
-        super (props);
-    }
-
-
-render() {
-    
+function ContactUs () {
     return (
-        <Container>
+        <section className="contact-us">
+        <div className="container">
         <div>
             <div>ContactUs</div>
         </div>
-        </Container>
-    )
+        </div>
+        </section>
+    );
 }
-}
+
+
+
+
 export default ContactUs;

@@ -49,6 +49,7 @@ function Login() {
 });
     
     return (
+      <div>
       <>
          <button onClick={handleShow} id="signUpForm" className="btn">
           Login 
@@ -87,10 +88,13 @@ function Login() {
 
                         <form>
                             <div class="col my-2">
-                                <input class="form-control" type="name" name="First_Name" placeholder="my@gmail.com" onClick={handleShow} />
+                                <input class="form-control" type="name" name="First_Name" placeholder="my@gmail.com" onClick={handleShow} onChange ={handleChange}/>
                             </div>
                             <div class="col my-2">
-                                <input class="form-control" type="password" name="Email" placeholder="********" />
+                                <input class="form-control" type="password" name="Email" placeholder="********" onChange ={handleChange}/>
+                            </div>
+                            <div class="col my-2">
+                                <input class="form-control" type="password" name="Email" placeholder="********" onChange ={handleChange}/>
                             </div>
                             <div class="col my-2">
                             <a type="btn" class="btn" href="index.html">Submit</a>
@@ -102,30 +106,7 @@ function Login() {
                             </div>
             </div>  
             </div>
-            {/* <div className="row m-2">
-              <div className="col-6" id="sign-up-image">
-              <img src = "story1.png" /> 
-              </div>
-            <div id="signUpForm">
-              <div>or</div>
-            
-
-                  <div className="col-6">
-                        <input type="text" name="" placeholder="First Name" onChange={handleChange}/>
-                    </div>
-                  <div className="col-6">
-                        <input type="text" name="email" placeholder="Last Name" onChange={handleChange} />
-                  </div>
-              <div className="row m-2">
-                  <div className="col-6">
-                      <input type="email" name="email" placeholder="Email Address" onChange={handleChange}/>
-                  </div>
-                  <div className="col-6">
-                      <input type="password" name="password" placeholder="Password" onChange={handleChange} />
-                  </div>
-              </div>
-            </div>
-          </div> */}
+      
                 
 
             
@@ -141,8 +122,16 @@ function Login() {
 
         </Modal> 
       </>
+
+     
+
+
+        </div>
+
     );
   }
+
+
 
   export default Login;
 

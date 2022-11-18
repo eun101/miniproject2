@@ -9,18 +9,18 @@ return (
 
 <div className="main-footer">
 	<div className="container" >
-		<div className="row">
-			<div className="col-3">
+		<div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4">
+			<div className="col">
 			<img src="./img1.png"  className = "footer-logo my-4"/>
 			</div>
 		</div>
 	
-	<div className="row">
+	<div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4">
 				<div className="col-3 ">		   	
 						<p> Aims to connect people who aspire for excellence and personal growth for a brighter future.</p>
 				</div>  
 					
-				<div className="col-3">     
+				<div className="col">     
 					<h4>About Us</h4>
 					<ul className="list-unstyled">
 						<li class="active"><a href="#">Community</a></li>
@@ -30,7 +30,7 @@ return (
 					</ul>
 				</div>
 
-				<div className="col-3">     
+				<div className="col">     
 				<h4>Contact Us</h4>
 					<ul className="list-unstyled">
 						<li class="active"><a href="#">eunishe@gmail.com</a></li>			
@@ -40,7 +40,7 @@ return (
 					</ul>
 				</div>
 
-				<div className="col-2"> 		
+				<div className="col"> 		
 				<h4>Social Media</h4>
 					<ul className="social-icon">	
 						<li class="active"><a href="fab fa-facebook">Facebook</a></li>

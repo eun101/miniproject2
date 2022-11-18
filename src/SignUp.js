@@ -6,7 +6,7 @@ import {useGoogleLogin} from '@react-oauth/google';
 import axios from "axios"
 
 
-function Login() {
+function SignUp() {
     const [show, setShow] = useState(false);
 
         
@@ -16,13 +16,16 @@ function Login() {
     const [inputs, setInputs] = useState({
       id:0,
       version: 0,
-  });
+});
+
+    const [fieldName, setFieldName ] = useState ([]);
+    
 
   const handleChange = (event) =>{
     const fieldName = event.target.name;
     const fieldValue = event.target.value;
 
-    setInputs(values=>({...values, [fieldName]: fieldValue}));
+    setFieldName(values=>({...values, [fieldName]: fieldValue}));
   }
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -67,33 +70,23 @@ function Login() {
                         <div class="form-row">
                             
                             <h5>Join the Community For Free</h5>
-
+                            <form onSubmit= {handleSubmit}>
                             <button onClick={login} className = "googlebutton my-3">
                             <img src="https://img.icons8.com/color/48/null/google-logo.png" height="30px" className="googleicon" />
                              Continue with Google
-                          </button>
-                            {/* <GoogleOAuthProvider clientId="386413759697-r2obkbvia81u5ol60d1jjgiva56ktf21.apps.googleusercontent.com">
-                              <GoogleLogin className = "google-login"
-                              onSuccess={credentialResponse => {
-                                  console.log(credentialResponse);
-                              }}
-                              onError={() => {
-                                  console.log('Login Failed');
-                              }}
-                              />
-                            </GoogleOAuthProvider> */}
-
-
-                        <form>
+                            </button>
+                            <div class="col">
+                                <input type= "hidden" value= {fieldName.id} />
+                            </div>
+                        
                             <div class="col my-2">
-                                <input class="form-control" type="name" name="First_Name" placeholder="my@gmail.com" onChange={handleChange}/>
+                                <input class="form-control" type="name" name="first_name" placeholder="First Name" onChange={handleChange} value= {fieldName.first_name}/>
                             </div>
                             <div class="col my-2">
-                                <input class="form-control" type="email" name="Email" placeholder="Email Address" onChange={handleChange}/>
+                                <input class="form-control" type="email" name="email_address" placeholder="Email Address" onChange={handleChange} value= {fieldName.first_name}/>
                             </div>
                             <div class="col my-2">
-                                <input class="form-control" type="password" name="Password" placeholder="********" onChange={handleChange}/>
-                                <p></p>
+                                <input class="form-control" type="password" name="password" placeholder="********" onChange={handleChange} value= {fieldName.first_name}/>
                             </div>
                             <div class="col my-2">
                             <button className="btn-sign-to-google" onClick={handleSubmit}>Submit</button>
@@ -106,33 +99,10 @@ function Login() {
                         Already part of the community? <a href="#" >Log In</a>
                         </div>
                       
-                            </div>
+                        </div>
             </div>  
             </div>
-            {/* <div className="row m-2">
-              <div className="col-6" id="sign-up-image">
-              <img src = "story1.png" /> 
-              </div>
-            <div id="signUpForm">
-              <div>or</div>
-            
-
-                  <div className="col-6">
-                        <input type="text" name="" placeholder="First Name" onChange={handleChange}/>
-                    </div>
-                  <div className="col-6">
-                        <input type="text" name="email" placeholder="Last Name" onChange={handleChange} />
-                  </div>
-              <div className="row m-2">
-                  <div className="col-6">
-                      <input type="email" name="email" placeholder="Email Address" onChange={handleChange}/>
-                  </div>
-                  <div className="col-6">
-                      <input type="password" name="password" placeholder="Password" onChange={handleChange} />
-                  </div>
-              </div>
-            </div>
-          </div> */}
+          
                 
 
             
@@ -152,6 +122,6 @@ function Login() {
     );
   }
 
-  export default Login;
+  export default SignUp;
 
 

@@ -71,8 +71,9 @@ function Courses  ()  {
                 </ul>
               </div>
               <div class="col-9 main_content">
-                  <h2>All Categories</h2>
+                 <h2>Leadership</h2>
                 <div class="row">
+           
                 </div>
                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-3">
                 {filteredList.slice( 0, visible).map((course)=>(
@@ -97,7 +98,7 @@ function Courses  ()  {
                         </Card>
                     </div>
                     </div>
-                ))}
+                ))};
                 </div>
                 <button onClick={showMoreItems}> View More </button>
               </div>

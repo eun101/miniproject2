@@ -1,6 +1,5 @@
 import React from "react";
 import {Container} from 'react-bootstrap';
-import ImageSlider from './ImageSlider';
 
 
 class SuccessStories extends React.Component {
