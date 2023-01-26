@@ -4,7 +4,6 @@ import herobanner from './herobanner.png';
 import SignUp from './SignUp';
 import { Link, useResolvedPath, useMatch } from "react-router-dom";
 import Login from './Login';
-import McCourses from './McCourses';
 import vid1 from './vid1.mp4';
 import {useGoogleLogin} from '@react-oauth/google';
 import axios from "axios";
@@ -48,17 +47,6 @@ function MainContent() {
         version: 0,
     });
   
-    const handleChange = (event) =>{
-      const fieldName = event.target.name;
-      const fieldValue = event.target.value;
-  
-      setInputs(values=>({...values, [fieldName]: fieldValue}));
-    }
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      setInputs(values=>({...values, version: inputs.version+1}));
-    
-    }
   
     const login = useGoogleLogin({
       onSuccess: async respose => {

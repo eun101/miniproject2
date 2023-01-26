@@ -69,7 +69,7 @@ function Login() {
                             
                             <h5>Join the Community For Free</h5>
 
-                            <button onClick={login} className = "my-3">
+                            <button onClick={login} className = " googlebutton-banner  my-3">
                             <img src="https://img.icons8.com/color/48/null/google-logo.png" height="19px" className="googleicon" />
                              Continue with Google
                           </button>
@@ -84,17 +84,17 @@ function Login() {
                               />
                             </GoogleOAuthProvider> */}
 
-                            <h6 className="m-1 mx-3 or">or </h6>
+                            <h6 className="m-1 mx-3 or"> or </h6>
 
                         <form>
                             <div class="col my-2">
-                                <input class="form-control" type="name" name="First_Name" placeholder="my@gmail.com" onClick={handleShow} onChange ={handleChange}/>
+                                <input class="form-control" type="name" name="First_Name" placeholder="First Name" onClick={handleShow} onChange ={handleChange}/>
                             </div>
                             <div class="col my-2">
-                                <input class="form-control" type="password" name="Email" placeholder="********" onChange ={handleChange}/>
+                                <input class="form-control" type="email" name="Email" placeholder="Email" onChange ={handleChange}/>
                             </div>
                             <div class="col my-2">
-                                <input class="form-control" type="password" name="Email" placeholder="********" onChange ={handleChange}/>
+                                <input class="form-control" type="password" name="password" placeholder="********" onChange ={handleChange}/>
                             </div>
                             <div class="col my-2">
                             <a type="btn" class="btn" href="index.html">Submit</a>

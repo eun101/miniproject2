@@ -154,7 +154,7 @@ h6 {
 
 
 .navbar img{
-width: 80%;
+width: 60%;
 margin-top: 13px;
 
 
@@ -352,6 +352,12 @@ button .modal-close{
   color: white;
 }
 
+.social-icon {
+  padding-right: 25px;
+}
+
+
+
 
 
 /*****Sign Up Form Ends Here*****/
@@ -450,7 +456,7 @@ font-size: 14px;
 .heroBanner .promovideo {
   z-index: 9;
   position: relative;
-  margin-top: 50px;
+  margin-top: 10px;
 
 }
 
@@ -471,7 +477,7 @@ font-size: 14px;
 
 .heroBanner  .titlewrapper h1 {
   /* z-index: 4; */
-margin-top: 80px;
+margin-top: 40px;
   text-align: center;
 }
 
@@ -580,15 +586,25 @@ justify-content: center;
 
 .sidebar li{
   list-style: none;
-  margin: 20px 0;
+  margin: 15px;
 }
 
 .sidebar{
   list-style: none;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
+.course-category-wrapper {
+  background-color: #007D6F;
+  justify-content: center;
+}
 
+.course-category-wrapper h6 {
+color: white;
+float: left;
+margin-top: 6px;
+margin-left: 10px;
+}
 
 /*****Courses Ends Here*****/
 
@@ -606,15 +622,6 @@ justify-content: center;
 iframe{
   margin: 20px;
   margin-right: 0;
-}
-
-.videos{
-  transform: translateX(-50px);
-  display: flex;
-  overflow-x: scroll;
-  width: 100vw;
-  background-color: white;
-  background-image: linear-gradient(147deg, #007D6F 0%, #007D6F 74%);
 }
 
 .videos::-webkit-scrollbar{
@@ -683,7 +690,8 @@ img {
 }
 .text {
   font-size: 20px;
-  padding-left: 20px;
+  margin-top: 100px;
+  font-weight: 500;
 }
 
 
@@ -728,9 +736,17 @@ img {
   margin-top: 200px;
  }
 
+ .join-community-caption h4{
+  text-align: center;
+  color: white !important;
+ }
+
 
 
  /*****Join Community Ends Here*****/
+
+
+
 
 
  /*****Pricing Starts Here*****/
@@ -744,6 +760,15 @@ margin:40px;
 .price-card div:hover{
  background-color: none !important;   
   }
+
+.pricing-content a {
+  color: black;
+}
+
+.pricing-content p {
+  justify-content: center;
+  text-align: center;
+}
 
 
  /*****Pricing Ends Here*****/
@@ -773,8 +798,19 @@ margin:40px;
   
 }
 
-.footer-logo{
-  width: 100%; 
+.main-footer img{
+  width: 70%;
+  margin-top: 30px;
+}
+
+
+
+.main-footer h4{
+  color: white;
+}
+
+.footer-logo {
+  width: 80%; 
   justify-content: center;
 }
 
@@ -796,6 +832,26 @@ margin:40px;
 .main-footer a:hover{
  color: #F1C548;
  
+}
+
+.main-footer ul{
+  text-decoration-style: none !important;
+  list-style-type: none;
+  font-size: 15px;
+ }
+
+ 
+.main-footer p{
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.main-footer h6{
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 20px;
 }
 
 /*****Footer Ends Here*****/
@@ -847,16 +903,7 @@ border-radius: 20px;
 /*****Scroll Ends Starts Here*****/
 
   
-@media screen and (max-width:576px) {
-  .promovideo {
-    display: none;
-  }
 
-  .joincommunity row{
-    display: block;
-    
-  }
-}
 
 @media screen and (max-width:320px) {
 .joincommunity .row{
@@ -874,6 +921,49 @@ width: 300px;
 display: none;
 
 }
+
+.navbar ul {
+display: block;
+background-color: #ffffff;
+color: white;
 }
+
+
+}
+
+
+@media screen and (max-width:576px) {
+  .joincommunity .row{
+      display: block;
+  
+  }
+  
+  .joincommunity .img{
+  
+  width: 300px;
+  
+  }
+  
+  .joincommunity-img2 {
+  display: none;
+  
+  }
+  
+  .navbar ul {
+  display: block;
+  background-color: #ffffff;
+  color: white;
+  }
+  
+  .promovideo {
+    display: none;
+  }
+
+  .joincommunity row{
+    display: block;
+    
+  }
+  
+  }
 
   

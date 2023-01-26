@@ -11,7 +11,7 @@ render() {
     return (
         <Container>
         <div>
-            <div>Community</div>
+            <h1>Community</h1>
         </div>
         </Container>
     )

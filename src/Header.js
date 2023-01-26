@@ -26,10 +26,10 @@ function Header (){
             <div>
                 <Navbar expand="lg" fixed="top" className="bg-light">
             
-                    <div className="col-3 px-5">
+                    <div className="col-4 px-5">
                     <Link to="/"><img src="./img2.png" alt="logo"></img></Link>
                     </div>
-                        <div className="col-9">
+                        <div className="col-8">
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                                 <ul>
@@ -39,7 +39,6 @@ function Header (){
                                     <CustomLink to="/community">Community</CustomLink>
                                     <CustomLink to="/pricing">Pricing</CustomLink>
                                     <CustomLink to="/successstories">Success Stories</CustomLink>
-                                    <CustomLink to="/contactus">Contact Us</CustomLink>
                                     
                                    <Login><CustomLink>Login</CustomLink></Login>
                                 </ul>

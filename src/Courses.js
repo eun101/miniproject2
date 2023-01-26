@@ -16,7 +16,7 @@ function Courses  ()  {
   const [selectedCategory, setSelectedCategory] = useState();
   const [visible, setVisible] = useState(6);
   const showMoreItems = () => {
-    setVisible ((prevValue) => prevValue +6);
+    setVisible ((prevValue) => prevValue +12);
   };
 
   useEffect(() =>{
@@ -62,25 +62,26 @@ function Courses  ()  {
             <div class="row">
               <div class="col-3 sidebar" onClick={handleCategoryChange}>
                 <ul>
-                  <li><Link to="/courses/all" className="btn btn-c" value="" >All</Link></li>
-                  <li><Link to="/courses/category/personal-development" className="btn btn-c" value="Personal-Development" >Personal Development</Link></li>
-                  <li><Link to= "/courses/category/productivity-hacks"><button className="btn btn-c" value="Productivity-Hacks" >Productivity Hacks</button></Link></li>
+                  <li><Link to="/courses/all" className="btn btn-c" value="" >All Categories</Link></li>
+                  <li><Link to="/courses/category/personal-development" className="btn btn-c" value="Personal Development" >Personal Development</Link></li>
+                  <li><Link to= "/courses/category/productivity-hacks"><button className="btn btn-c" value="Productivity Hacks" >Productivity Hacks</button></Link></li>
+                  <li> <Link to= "/courses/category/personal-finance"><button className="btn btn-c" value="Personal Finance" >Personal Finance</button></Link></li>
                   <li><Link to= "/courses/category/communicating"> <button className="btn btn-c" value="Communicating" >Communicating</button></Link></li>
                   <li> <Link to= "/courses/category/leadership"><button className="btn btn-c" value="Leadership" >Leadership</button></Link></li>
                   <li> <Link to="/courses/category/creativity" className="btn btn-c" value="Creativity" >Creativity</Link></li>
                 </ul>
               </div>
               <div class="col-9 main_content">
-                  <h2>All Categories</h2>
-                <div class="row">
-                </div>
-                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-3">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 mt-3 g-5 h-100">
                 {filteredList.slice( 0, visible).map((course)=>(
                   <div>
-                    <div class="col main_content_course">
-                        <Card className="h-100">
+                    <div class="col main_content_course ">
+                        <Card>
                           <Card.Img variant="top"/>
                           <img src= {apiPath + course.photo}/>
+                          <div className=" course-category-wrapper">
+                          <h6>{course.category}</h6>
+                          </div>
                           
                           <Card.Body>
                           <Link to={"/coursedetail?id=" + course.id}> 
@@ -91,6 +92,7 @@ function Courses  ()  {
                             <Card.Text>
                               <h5>{course.course_instructor}</h5>
                               <h6>{course.duration}</h6>
+                              
                             </Card.Text>
                           </Card.Body>
                         
@@ -99,7 +101,7 @@ function Courses  ()  {
                     </div>
                 ))}
                 </div>
-                <button onClick={showMoreItems}> View More </button>
+                <button classNamen="btn-primary" onClick={showMoreItems}> View More </button>
               </div>
             </div>
           </div>

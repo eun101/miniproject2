@@ -79,8 +79,8 @@ function CourseCarousel() {
     <div class="row sidebar" onClick={handleCategoryChange}>
 				<ul>
            <button className="btn btn-c" value="" >All</button>
-            <button className="btn btn-c" value="Personal-Development" >Personal Development</button>
-            <button className="btn btn-c" value="Productivity-Hacks" >Productivity Hacks</button>
+            <button className="btn btn-c" value="Personal Development" >Personal Development</button>
+            <button className="btn btn-c" value="Productivity Hacks" >Productivity Hacks</button>
              <button className="btn btn-c" value="Communicating" >Communicating</button>
              <button className="btn btn-c" value="Leadership" >Leadership</button>
               <button className="btn btn-c" value="Creativity" >Creativity</button>

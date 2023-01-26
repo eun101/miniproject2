@@ -31,26 +31,16 @@ function Pricing () {
 
     return (
         <section className='price-card'>
-        <div className='container-fluid'>
-        <div className="row mainbanner row-cols-12 row-cols-sm-12 row-cols-md-12 ">
-                  
-        <img src={pricing}></img>
-        </div>
-
-      
-
-            
+        <div className='container'>
             <h1>Pricing</h1>
-           
                  <Row xs={1} md={3}>
                  {price.map((price)=>(
                     <Col >
-           
                         <Card className="h-100">
                             <Card.Header>
                                <h3> {price.plan} </h3>
                             </Card.Header>
-                            <Card.Body>
+                            <Card.Body className='pricing-content'>
 
                                 <Card.Title>
                                   <h2>  {price.price} </h2> </Card.Title>
@@ -59,7 +49,7 @@ function Pricing () {
                                 <h6>{price.description}</h6>
                                 </Card.Text>
 
-                                <Button><a href="/membership/checkout">{price.CTA}</a></Button>
+                                <button className='btn'><a href="/membership/checkout">{price.CTA}</a></button>
                             </Card.Body>
                         </Card>
                     </Col>
